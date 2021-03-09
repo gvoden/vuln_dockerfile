@@ -33,3 +33,4 @@ RUN apt-get install -y wget; \
     rm -rf zabbix-3.0.3*
 ADD zabbix.conf.php /usr/share/zabbix/conf/zabbix.conf.php
 CMD ["sh", "run.sh"]
+EXPOSE 80

@@ -29,3 +29,4 @@ RUN apt-get install -y wget; \
     sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone Europe\/Riga/g' /etc/zabbix/apache.conf;\
     chmod +x run.sh; ls -ln /etc/zabbix/web/zabbix.conf.php /usr/share/zabbix/conf/zabbix.conf.php
 CMD ["sh", "run.sh"]
+EXPOSE 80
